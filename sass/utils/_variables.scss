@@ -1,0 +1,23 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color:#757575;
+    --accent-text-color: #2196f3;
+    --bg-primary-color: #ffffff;
+    --bg-secondary-color: #f5f4fa;
+    --bg-footer-color: #2f303a;
+    --transition-fast: 250ms ease-in-out;
+    --transition-slow: 600ms ease-in-out;
+}
+
+.visually-hidden  {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}

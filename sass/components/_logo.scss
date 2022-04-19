@@ -1,0 +1,27 @@
+.logo {
+  color: var(--accent-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.logo.primary {
+  .part {
+    color: #000;
+    // margin-right: 93px;
+  }
+}
+
+.logo.secondary {
+  .part {
+    color: #ffffff;
+    // margin-bottom: 20px;
+  }
+}
+
