@@ -1,4 +1,5 @@
 .header-page {
+  position: relative;
   background: var(--bg-primary-color);
   // margin-top: 24px;
   // padding-bottom: 25px;
@@ -27,8 +28,6 @@
     top: 45px;
   }
 }
-
-
 
 .header-list {
   display: flex;
@@ -99,4 +98,47 @@
 .header-page .contacts-list__link:focus
 .phone-icon {
   fill: var(--accent-text-color);
+}
+
+// Кнопка мобильного меню
+
+.menu-btn {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+}
+
+.menu-btn .menu-btn__icon-close {
+    display: none;
+  }
+
+.menu-btn.is-active .menu-btn__icon-close {
+  display: block;
+}
+
+.menu-btn.is-active .menu-btn__icon-open {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  height: 400px;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: solid 1px red;
+}
+
+
+.mobile-menu.is-active {
+  display: block;
 }
