@@ -5,15 +5,23 @@
   margin: auto;
 
   @media screen and (min-width: 768px) {
-    width: 720px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
 
-
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__team {
+  width: 100%;
+  background-color: var(--bg-secondary-color);
 }

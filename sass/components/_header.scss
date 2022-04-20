@@ -120,11 +120,11 @@
     display: none;
   }
 
-.menu-btn.is-active .menu-btn__icon-close {
+.menu-btn.is-open .menu-btn__icon-close {
   display: block;
 }
 
-.menu-btn.is-active .menu-btn__icon-open {
+.menu-btn.is-open .menu-btn__icon-open {
   display: none;
 }
 .mobile-menu {
@@ -139,6 +139,6 @@
 }
 
 
-.mobile-menu.is-active {
+.mobile-menu.is-open {
   display: block;
 }

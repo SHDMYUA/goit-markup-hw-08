@@ -1,27 +1,24 @@
-.development,
-.development__title {
+.development__list {
   display: none;
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 }
 
-// .container
-// .development {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
 .development__item {
-position: relative;
-overflow: hidden;
-  // &:not(:last-child) {
-  // margin-right: 30px;
-  // }
+  position: relative;
+  overflow: hidden;
+  &:not(:last-child) {
+  margin-right: 30px;
+  }
 }
 
 .development__content {
   width: 370px;
   position: absolute;
-  // padding: 27px 82px;
+  padding: 27px 82px;
   bottom: 0;
   left:0;
   font-weight: 700;
