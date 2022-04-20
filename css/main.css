@@ -134,19 +134,21 @@ section {
 }
 
 .header-page {
-  position: relative;
   background: var(--bg-primary-color);
+  margin-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ECECEC;
 }
 
 .header-list__menu {
+  position: relative;
+  display: none;
   color: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  position: relative;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -164,22 +166,61 @@ section {
   top: 45px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-list__menu {
+    display: block;
+  }
+}
+
 .header-list {
   display: flex;
 }
 
 .contacts-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    margin-left: auto;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-wrap {
   display: flex;
-  margin-left: auto;
+  align-items: center;
 }
 
 .header-page .contacts-list__link {
+  display: none;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-page .contacts-list__link {
+    display: block;
+  }
 }
 
 .header-list__menu.current {
@@ -223,17 +264,31 @@ section {
   fill: var(--accent-text-color);
 }
 
+Кнопка мобильного меню
 .menu-btn {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
   border: none;
   background-color: transparent;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid green;
+  padding: 12px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  Кнопка мобильного меню
+.menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn__icon {
+    display: none;
+  }
 }
 
 .menu-btn .menu-btn__icon-close {
@@ -249,17 +304,53 @@ section {
 }
 
 .mobile-menu {
-  display: none;
-  position: absolute;
-  height: 400px;
-  background-color: white;
-  top: 100%;
+  position: fixed;
+  background-color: green;
+  top: 0;
   left: 0;
-  width: 100%;
-  border: solid 1px red;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
+  display: block;
+}
+
+.mobile-navigation__menu {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.mobile-navigation__contact--phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.mobile-navigation__contact--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__wrap {
+  display: block;
+  margin-top: auto;
+}
+
+.mobile-contact__wrap {
   display: block;
 }
 
@@ -278,10 +369,12 @@ section {
 
 .logo.primary .part {
   color: #000;
+  margin-right: 93px;
 }
 
 .logo.secondary .part {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .portfolio__list {
@@ -746,6 +839,12 @@ section {
   color: var(--accent-text-color);
 }
 
+.subscraber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .subscraber__input {
   width: 358px;
   height: 50px;
@@ -1024,10 +1123,7 @@ textarea {
 }
 
 .footer {
-  height: 252px;
   background: var(--bg-footer-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .address__item--post {
@@ -1057,19 +1153,6 @@ textarea {
   color: var(--accent-text-color);
 }
 
-.address__item {
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
-
-.address__item:last-child {
-  margin-bottom: 0px;
-}
-
-.address__item:last-child:not(:first-child) {
-  margin-top: 0px;
-}
-
 .footer__title {
   text-transform: uppercase;
   font-weight: 700;
@@ -1089,20 +1172,20 @@ textarea {
 }
 
 .footer__wrapper--center {
-  display: block;
-  justify-content: center;
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__wrapper--left {
   display: block;
-  align-items: flex-start;
-  margin-right: 70px;
+  align-items: center;
 }
 
-/* общий */
 .footer__wrapper {
+  margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

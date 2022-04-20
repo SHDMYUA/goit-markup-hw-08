@@ -32,29 +32,42 @@
                 <svg class="phone-icon" width="19" height="14">
                   <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg>+38 096 111 11 11</a></li>
-            </ul>
-              <!-- Кнопка меню для мобилки -->
-<!-- 
-          <button class="menu-btn" type="button" aria-controls="menu-container" aria-label="Кнопка открытия меню" aria-expanded="false" data-menu-button>
-            <svg class="menu-btn__icon" width="44" height="44">
+            </ul> -->
+          <!-- Кнопка меню для мобилки -->
+          <!-- <button class="menu-btn" type="button" aria-controls="menu-container" aria-label="Кнопка открытия меню" aria-expanded="false" data-menu-button>
+            <svg class="menu-btn__icon" width="24" height="16">
               <use class="menu-btn__icon-open" href="./images/symbol-defs.svg#icon-menu"></use>
               <use class="menu-btn__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-          <div class="mobile-menu" id="menu-container" aria-expanded="" data-menu>
-
+          <div class="mobile-menu is-hidden" id="menu-container" aria-expanded="" data-menu>
+          <ul class="mobile-navigation__list list">
+            <div class="mobile-menu__wrap">
+            <li class="mobile-navigation__item">
+              <a href="./index.html" class="mobile-navigation__menu current link">Студия</a></li>
+            <li class="mobile-navigation__item">
+              <a href="./portfolio.html" class="mobile-navigation__menu link">Портфолио</a></li>
+            <li class="mobile-navigation__item">
+              <a href="#" class="mobile-navigation__menu link">Контакты</a></li></div>
+            <div class="mobile-contact__wrap">
+              <li class="mobile-navigation__item">
+              <a href="tel:+380961111111" class="mobile-navigation__contact--phone link">+38 096 111 11 11</a></li>
+            <li class="mobile-navigation__item">
+              <a href="mailto:info@devstudio.com" class="mobile-navigation__contact--mail link">info@devstudio.com</a></li></div>
+          </ul>
           </div>
+          </nav>
         </div>
-      </header> -->
-    <main>
+      </header>
+    <main> -->
   <!--                   SECTION HERO                     -->
         
-      <!-- <section class="hero">
+      <section class="hero">
             <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
             <button type="button" class="button__hero button" data-modal-open>Заказать услугу</button>
-      </section> --> -->
+      </section>
   <!--                   SECTION DESCRIPTION              -->
-        <section class="section benefits">
+        <!-- <section class="section benefits">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="container">
           <ul class="benefits list">
@@ -111,9 +124,9 @@
               <p class="development__content">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p></div></li>
         </ul>
       </div>
-      </section>
-                    <!-- Section Our Team                    -->
-      <section class="section__team">
+      </section> -->
+  <!-- Section Our Team                    -->
+      <!-- <section class="section__team">
         <div class="container team">
         <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
@@ -238,10 +251,9 @@
                 </div>
           </ul>
         </div>
-      </section>
+      </section> -->
   <!--                   SECTION REGULAR CUSTOMERS             -->
-
-      <section class="our-customers">
+      <!-- <section class="our-customers">
             <h2 class="customers__title">Постоянные клиенты</h2>
             <div class="container customers">
               <ul class="customers-list list">
@@ -271,11 +283,11 @@
                   </use></svg></a></li>
             </ul>
           </div>
-      </section>
+      </section> -->
     </main>
   <!--  SECTION FOOTER  -->
-      <!-- <footer class="footer section"> -->
-        <!-- <div class="footer__wrapper container">
+      <footer class="footer section">
+        <div class="footer__wrapper container">
           <div class="footer__wrapper--left">
             <a href="./index.html" class="logo secondary">Web<span class="part">Studio</span></a>
             <address>
@@ -317,9 +329,9 @@
               </span>
             </button>
           </div>
-        </div> -->
+        </div>
   <!-- MODAL SECTION -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
               <div class="modal">
                 <button data-modal-close class="modal-close-btn">
                   <svg class="close-icon"><use href="./images/symbol-defs.svg#icon-close" width="11" height="11"></use></svg></button>
@@ -357,8 +369,8 @@
                     <span class="button-modal"><button class="button modal" type="submit" data-modal-close>Отправить</button></span>
                   </form>
               </div>
-        </div> -->
-      <!-- </footer> -->
+        </div>
+      </footer>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
   </body>
