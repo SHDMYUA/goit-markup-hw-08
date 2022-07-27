@@ -1,26 +1,10 @@
 .container {
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  margin: 0 auto;
 }
-
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.section__team {
-  width: 100%;
-  background-color: var(--bg-secondary-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }

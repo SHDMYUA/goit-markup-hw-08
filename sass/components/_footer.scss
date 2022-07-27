@@ -1,8 +1,9 @@
 .footer {
-    // height: 252px;
+  height: 252px;
   background: var(--bg-footer-color);
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  bottom:0;
 }
 
 .address__item--post {
@@ -32,16 +33,16 @@
   }
 }
 
-// .address__item {
-//   margin-top: 20px;
-//   margin-bottom: 9px;
-//   &:last-child {
-//     margin-bottom: 0px;
-//     &:not(:first-child) {
-//     margin-top: 0px;
-//     }
-//   }
-// }
+.address__item {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0px;
+    &:not(:first-child) {
+    margin-top: 0px;
+    }
+  }
+}
 
 .footer__title {
   text-transform: uppercase;
@@ -62,21 +63,20 @@
 }
 
 .footer__wrapper--center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  justify-content: center;
+  margin-right: 93px;
 }
 
 .footer__wrapper--left {
   display: block;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: 70px;
 }
 
-// /* общий */
+/* общий */
 .footer__wrapper {
-  margin: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

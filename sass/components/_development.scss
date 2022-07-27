@@ -1,15 +1,14 @@
-.development__list {
-  display: none;
-  @media screen and (min-width: 1200px) {
-  display: flex;
+
+.container
+.development {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  }
 }
 
 .development__item {
-  position: relative;
-  overflow: hidden;
+position: relative;
+overflow: hidden;
   &:not(:last-child) {
   margin-right: 30px;
   }
